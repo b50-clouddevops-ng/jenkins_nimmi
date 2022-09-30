@@ -5,6 +5,10 @@ pipeline {
 
     triggers { pollSCM('*/2 * * * *') }
 
+    tools {
+        maven 'maven-3.8.5'
+    }
+
     stages {
         stage('Hello') {
             steps {
