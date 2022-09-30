@@ -14,7 +14,7 @@ pipeline {
 
         stage('Hi') {
             steps {
-                sh "Run mvn command"
+                sh " echo Run mvn command"
                 sh "mvn clean"
             }
         }
