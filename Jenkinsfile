@@ -14,6 +14,12 @@ pipeline {
             }
         }
 
+        stage('NG WS') {
+            steps {
+                echo 'Hi NG ws'
+            }
+        }
+
         
     }
 }
