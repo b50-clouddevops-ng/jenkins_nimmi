@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        tage('Hi') {
+        stage('Hi') {
             steps {
                 echo 'Hi World'
             }
