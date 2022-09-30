@@ -17,13 +17,6 @@ pipeline {
                 echo 'Hi World'
             }
         }
-
-        stage('NG WS') {
-            steps {
-                echo 'Hi NG ws'
-            }
-        }
-
         
     }
 }
