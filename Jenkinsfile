@@ -1,6 +1,7 @@
 pipeline {
        agent any
-    // agent {label : Jenkins }     
+    // agent {label : Jenkins } 
+    //    
 
     triggers { pollSCM('*/2 * * * *') }
 
