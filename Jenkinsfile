@@ -1,7 +1,8 @@
 pipeline {
-       agent any
-    // agent {label : Jenkins } 
-    //    
+    // agent any
+     agent { label 'Jenkins'} 
+        
+      
 
     triggers { pollSCM('*/2 * * * *') }
 
@@ -18,6 +19,7 @@ pipeline {
 
         stage('Hi') {
             steps {
+                sh "hostname"
                 sh " echo Run mvn command"
                 sh "mvn -v"
             }
